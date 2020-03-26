@@ -1,0 +1,71 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage{indentfirst} %indentace prvního odstavce
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[czech]{babel}
+\usepackage{mathdots}
+\usepackage{slashbox}
+
+\begin{document}
+\begin{center}
+\large NMAG436 - HW1
+
+\normalsize Jan Oupický
+\end{center}
+\vspace{1\baselineskip}
+
+\section{}
+Let $w \coloneqq y^2 - f(x)$, where $f(x) \coloneqq x^3-4x^2-x+4$. By definition, we see that $w$ is a short WEP.
+\begin{enumerate}[label=(\alph*)]
+\item We will use the proposition 3.12 and the definition of separable polynomials. We can see that 1 and -1 are roots of $f(x)$. We can get the 3rd root by polynomial division. We now know $f(x)$ has 3 roots: $\{-1, 1, 4\}$ therefore $f(x)$ has no multiple roots because it has degree 3 (we could check this without polynomial division by checking if -1 and 1 are roots of $f'(x)$ therefore multiple roots). This means $f(x)$ is separable and by proposition 3.12 3) $w$ is smooth ($\mathbb{R}$ does not have characteristic 2).
+
+\item From a) $f(x) = (x-1)(x+1)(x-4) \stackrel{\mathbb{F}_5}{=} (x+4)(x+1)(x+1)$. We see $4$ is a multiple root of $f(x) \implies f(x)$ is not separable. $\mathbb{F}_5$ does not have characteristic 2 so we again use proposition 3.12 3) and we get that $w$ is not smooth $\iff$ $w$ is singular.  
+\end{enumerate}
+
+\section{}
+$\mathbb{R}, \mathbb{F}_3$ don't have characteristic 2.
+\begin{enumerate}[label=(\alph*)]
+\item Let $w \coloneqq y^2+y(2−2x)−(x^3+x^2+3x−1)$, $w$ is a WEP but not a short WEP. To apply proposition 3.12, we need the short WEP of $w$. Lemma 3.1 gives the affine bijection needed to get the short WEP form of $w$. By appling lemma 3.1 ($a = -2, c = 2$) we have: 
+\[
+A \coloneqq \begin{pmatrix}
+1 & 0 \\
+1 & 1
+\end{pmatrix}, b \coloneqq \begin{pmatrix}
+0 \\
+-1
+\end{pmatrix} \implies \sigma \coloneqq \tau_{\theta_A(b)} \circ \theta_A \implies \sigma^*(f(x,y)) = f(x, x+y-1)
+\]
+$\sigma^*(w) = y^2-(x^3+2x^2+x)$ is now a short WEP. Let $f(x)\coloneqq (x^3+2x^2+x)$, we can see $-1$ is a root of $f(x)$ and also a root of $f'(x)$ therefore $\sigma^*(w)$ is singular by 3.12 3) and we have only one singularity by 3.12 1) and the point is $s \coloneqq (-1,0)^T$.
+Using lemma 3.10 2) we get a singular point of $w$. The point is $\sigma(s) = (-1,-2)^T$. Combination of proposition 3.12 1) and lemma 3.10 2) says there is only one singular point of $w$.
+
+\item We will use the same steps and reasoning as in (a). Let $w \coloneqq y^2 + y(2x+1)-(x^3+2x^2+2x)$. Applying lemma 3.1 $(a=2, c=1)$:
+\[
+A \coloneqq \begin{pmatrix}
+1 & 0 \\
+2 & 1
+\end{pmatrix}, b \coloneqq \begin{pmatrix}
+0 \\
+1
+\end{pmatrix} \implies \sigma \coloneqq \tau_{\theta_A(b)} \circ \theta_A \implies \sigma^*(f(x,y)) = f(x, 2x+y+1)
+\]
+$\sigma^*(w) = y^2-(x^3+1)$ is a short WEP. Let $f(x) \coloneqq x^3+1$. We can guess $2$ is a root of $f(x)$ and a root of $f'(x)$. Therefore $s\coloneqq (2,0)^T$ is the only singular point of $\sigma^*(w) \implies \sigma(s) = (2,2)^T$ is the only singular point of $w$. 
+\end{enumerate}
+
+\section{}
+Let $w,f$ be the same polynomials as in the 1st exercise (a). Then $W = (w)$. The roots of $f(x)$ are $\{-1,1,4\}$ therefore points $\alpha_1 \coloneqq (-1,0)^T, \alpha_2 \coloneqq (1,0)^T, \alpha_3 \coloneqq (4,0)^T \in V_w$. By lemma 4.1 $I_{\alpha_1} = (x+1,y)$. For example $y \in I_{\alpha_1}$, $y$ is irreducible in $\mathbb{R}[x,y]$ obviously $y \notin W$.
+
+We can apply the same reasoning for the other 2 points: 
+
+$I_{\alpha_2} = (x-1,y)$, for example $y$ is irreducible and obviously $\notin W$. 
+
+$I_{\alpha_3} = (x-4,y)$, for example $y$ is irreducible and obviously $\notin W$.
+\end{document}
+
