@@ -1,0 +1,87 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage{indentfirst} %indentace prvního odstavce
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[czech]{babel}
+\usepackage{mathdots}
+\usepackage{slashbox}
+
+\begin{document}
+\begin{center}
+\large NMAG436 - HW1
+
+\normalsize Jan Oupický
+\end{center}
+\vspace{1\baselineskip}
+
+\section{}
+By definition of $L$ being AFF given by $f(\alpha,\beta) = 0$ we know that $f$ is irreducible in $\mathbb{Q}$ and $L=\mathbb{Q}(\alpha,\beta)$.
+\begin{enumerate}[label=(\alph*)]
+\item Using proposition 4.7 we know that $\alpha$ is transcendental over $\mathbb{Q}$ because $deg_y(f)=2>0$ and also that $[\mathbb{Q}(\alpha,\beta):\mathbb{Q}(\alpha)]=2$. In other words, the basis A has 2 elements. Let $A=(1, \beta)$ (first element of basis A is $1$ and the second is $\beta$. We can see that $1$ and $\beta$ are linearly independent: 
+\begin{gather*}
+c_1,c_2 \in \mathbb{Q}(\alpha) :1c_1+\beta c_2 = 0 \stackrel{?}{\iff} c_1 = 0 = c_2\\
+1c_1+\beta c_2 = 0 \iff \beta c_2 = -c_1 \stackrel{c_2 \neq 0}{\iff} \beta = \frac{-c_1}{c2} \in \mathbb{Q}(\alpha)\\
+\implies \text{contradiction with }[\mathbb{Q}(\alpha,\beta):\mathbb{Q}(\alpha)]=2 \implies c_1 = 0 = c_2
+\end{gather*}
+We know the basis has 2 elements and therefore $A$ is a basis.
+\item Using the same reasoning ($\beta$ is also transcendental over $\mathbb{Q}$) using symetry (we can just replace $y$ with $x$) we get that $[\mathbb{Q}(\alpha,\beta):\mathbb{Q}(\beta)]=deg_x(f)=3$. Therefore the basis $B$ has 3 elements. Let $B = (1, \alpha, \alpha^2)$. Using the similar reasoning we can see that elements of $B$ are linearly independent therefore they form basis.
+
+\item We will use equalities given by $f(\alpha, \beta) = 0 \implies \beta^2 = \alpha^3+2\alpha^2+1, \alpha^3 = \beta^2-2\alpha^2-1$.
+\begin{gather*}
+[\alpha^3\beta^3]_A: \alpha^3\beta^3 = \alpha^3((\alpha^3+2\alpha^2+1)\beta) = \beta(\alpha^6+\alpha^5+\alpha^3), (\alpha^6+\alpha^5+\alpha^3) \in \mathbb{Q}(\alpha)\\
+A=(1,\beta) \implies [\alpha^3\beta^3]_A = (0, \alpha^6+\alpha^5+\alpha^3)\\
+[\alpha^3\beta^3]_A: \alpha^3\beta^3 = (\beta^2-2\alpha^2-1)\beta^3 = 1(\beta^5-\beta^3) + \alpha^2(-2\beta^3)\\
+B = (1, \alpha, \alpha^2) = (\beta^5-\beta^3, 0, -2\beta^3)
+\end{gather*}
+\end{enumerate}
+
+\section{}
+\begin{enumerate}[label=(\alph*)]
+\item Let $\gamma \coloneqq (1,2)^T \in \mathbb{Q}^2$. By calculating derivatives $\frac{\partial f}{\partial x} (\gamma) = -7, \frac{\partial f}{\partial y} (\gamma) = 4$ we get $t_{\gamma}(f) = -7(x-1)+4(y-2) = -7x+4y-1$. Let $(a_1,a_2) \coloneqq (-7,4)$ from lemma 5.6. Using lemma 5.6 we know we are looking for $\sigma \coloneqq \theta_A \tau_{-\gamma}$ where $A$ is a regular rational matrix of the form $A = \begin{pmatrix}b_1 & b_2 \\ -7 & 4\end{pmatrix}$. From definition of $\sigma$ we get $\sigma(1,2)^T = A(0,0)^T = 0$.\\
+Let $(b_1,b_2)=(1,0)$ for example. We can see that $A$ is regular. We now have to calculate the polynomial $\hat{f}$ following the proof of lemma 5.6. We will first calculate $\tilde{f}(x,y)$.
+\begin{gather*}
+p(x,y) \coloneqq \tilde{f}(x-1,y-2) = f(x,y)-t_\gamma(f)= y^2-x^3-2x^2+7x-4y\\
+\tilde{f}(x,y) \stackrel{\text{substitution}}{=} p(x+1,y+2) = y^2-x^3-5x^2\\
+A^{-1} = \begin{pmatrix}
+1 & 0\\
+\frac{7}{4} & \frac{1}{4}
+\end{pmatrix} \implies \theta_{A^{-1}}^*(p(x,y)) = p(x, \frac{7}{4}x+\frac{1}{4}y)\\
+\hat{f}(x,y) = \theta_{A^{-1}}^*(\tilde{f}(x,y))=\tilde{f}(x, \frac{7}{4}x+\frac{1}{4}y) = -x^3-\frac{31 x^2}{16}+\frac{7 x y}{8}+\frac{y^2}{16}\\
+\implies h(x)\coloneqq -x^3-\frac{31 x^2}{16}, g(x,y) \coloneqq \frac{7 x}{8}+\frac{y}{16}\\
+\sigma^*(p(x,y)) = p(x-1, -7x+4y-1)
+\end{gather*}
+We can check $\sigma^*(\hat{f}+y) = \sigma^*(h(x)+yg(x,y)+y) =  f$ . The desired map is $\sigma$, where $A$ is for example written above.
+\item From the lemma 5.6 we know $\sigma$ has the form $\sigma \coloneqq \theta_A \tau_{-\gamma}$, where $A = \begin{pmatrix}b_1 & b_2 \\ -7 & 4\end{pmatrix}$ is regular $\iff det(A) \neq 0$. We will now calculate $\sigma(0,0)^T:$
+\begin{gather*}
+A = \begin{pmatrix}b_1 & b_2 \\ -7 & 4\end{pmatrix}, \sigma(0,0)^T = A\begin{pmatrix}
+-1 \\ 2
+\end{pmatrix} = -1 \begin{pmatrix}
+b_1 \\ -7
+\end{pmatrix} -2 \begin{pmatrix}
+b_2 \\ 4
+\end{pmatrix} = \begin{pmatrix}
+-b_1 - 2b_2\\ -1
+\end{pmatrix}\\
+\text{we want }det(A) \neq 0 \iff 4b_1 + 7b_2 \neq 0 \iff b_1 \neq \frac{-7}{4}b_2 \\
+\text{in other words } \begin{pmatrix}
+b_1 \\
+b_2
+\end{pmatrix} \in \mathbb{Q}^2 \setminus Span_{\mathbb{Q}}{\begin{pmatrix}
+-7 \\ 4
+\end{pmatrix}}
+\end{gather*}
+To sum it up. There exists $\sigma$ satisfying given conditions if and only if $\mathbf{a} = \begin{pmatrix}
+-b_1-2b_2 \\ -1
+\end{pmatrix}$ where $(b_1,b_2)^T$ is not in the span of the vector $(-7, 4)$.
+\end{enumerate}
+
+\end{document}
+
