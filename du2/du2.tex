@@ -32,7 +32,9 @@ c_1,c_2 \in \mathbb{Q}(\alpha) :1c_1+\beta c_2 = 0 \stackrel{?}{\iff} c_1 = 0 = 
 \implies \text{contradiction with }[\mathbb{Q}(\alpha,\beta):\mathbb{Q}(\alpha)]=2 \implies c_1 = 0 = c_2
 \end{gather*}
 We know the basis has 2 elements and therefore $A$ is a basis.
-\item Using the same reasoning ($\beta$ is also transcendental over $\mathbb{Q}$) using symetry (we can just replace $y$ with $x$) we get that $[\mathbb{Q}(\alpha,\beta):\mathbb{Q}(\beta)]=deg_x(f)=3$. Therefore the basis $B$ has 3 elements. Let $B = (1, \alpha, \alpha^2)$. Using the similar reasoning we can see that elements of $B$ are linearly independent therefore they form basis.
+\item Using the same reasoning ($\beta$ is also transcendental over $\mathbb{Q}$) using symetry (we can just replace $y$ with $x$) we get that $[\mathbb{Q}(\alpha,\beta):\mathbb{Q}(\beta)]=deg_x(f)=3$. Therefore the basis $B$ has 3 elements. Let $B = (1, \alpha, \alpha^2)$. Following the proof of lemma 4.6 let $m(x) \coloneqq f(x, \beta) \in \mathbb{Q}(\beta)[x]$. The proof shows that $m(x) = -x^3-2x^2-1+\beta^2$ is a minimal polynomial of $\alpha$ over $\mathbb{Q}(\beta)$. 
+
+We want to prove that elements of $B$ are linearly independent $\iff$ ($b_0+b_1\alpha + b_2\alpha^2 = 0$ where $b_1,b_2,b_3 \in \mathbb{Q}(\beta) \iff b_1 = 0, b_2 = 0, b_3 = 0)$. Assume that there exists $b_1 + b_2\alpha + b_3\alpha^2 = 0$ where at least one $b_i \neq 0$. That would mean that $\alpha$ is a root of a non zero polynomial $\in \mathbb{Q}(\beta)[x]$. Since $m(x)$ is a minimal polynomial of $\alpha \implies m(x) | b_1+b_2x+b_3x^2$  which is impossible since $deg_x(m) = 3 > deg_x(b_1+b_2x+b_3x^2)$. Thats a contradiction therefore $1,\alpha, \alpha^2$ are linearly independent and form a basis.
 
 \item We will use equalities given by $f(\alpha, \beta) = 0 \implies \beta^2 = \alpha^3+2\alpha^2+1, \alpha^3 = \beta^2-2\alpha^2-1$.
 \begin{gather*}
