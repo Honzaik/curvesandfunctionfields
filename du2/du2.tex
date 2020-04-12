@@ -103,7 +103,7 @@ $\nu(k_1u+k_2v) = 1 \iff k_1 \neq 0, k_2 \in \mathbb{Q}$. If $k_2=0$ then we hav
 
 Similarly we can see that $\nu(k_1u+k_2v) = 2 \iff k_1 = 0, k_2 \neq 0$. Also by choosing any combination of $k_1,k_2 \in \mathbb{Q}$ we cannot get $\nu(k_1u+k_2v) = 3$.
 
-Now we have constraints on $k_1,k_2 \in \mathbb{Q}$ and we can "transform" these elements ($k_1u+k_2v$) to a $\alpha, \beta$ representation using $\bar{\sigma}(\alpha)=u, \bar{\sigma}(\beta)=v$. $\bar{\sigma}^{-1} \coloneqq \tau^{-1}_{-\gamma} \theta^{-1}_{A} = \tau_{\gamma}\theta_{A^{-1}}$ with the values from exercise 2. We see that $\bar{\sigma}^{-1}(k_1u+k_2v) = k_1+k_1\alpha+2k_2+\frac{7}{4}k_2\alpha + \frac{1}{4}k_2\beta $. When we rearange these elements we can form $l(\alpha,\beta) = l_0 + l_1\alpha + l_2\beta$ where (using vector notation for simplicty):
+Now we have constraints on $k_1,k_2 \in \mathbb{Q}$ and we can "transform" these elements ($k_1u+k_2v$) to a $\alpha, \beta$ representation using $\bar{\sigma}$. $\bar{\sigma}^{-1} \coloneqq \tau^{-1}_{-\gamma} \theta^{-1}_{A} = \tau_{\gamma}\theta_{A^{-1}}$ with the values from exercise 2. We see that $\bar{\sigma}^{-1}(k_1u+k_2v) = k_1+k_1\alpha+2k_2+\frac{7}{4}k_2\alpha + \frac{1}{4}k_2\beta $. When we rearange these elements we can form $l(\alpha,\beta) = l_0 + l_1\alpha + l_2\beta$ where (using vector notation for simplicty):
 \begin{gather*}
 \begin{pmatrix}
 l_0\\
@@ -120,8 +120,9 @@ l_2\\
 \end{pmatrix}
 \end{gather*}
 
-We defined conditions on $k_1,k_2$ based on valuation value and now we have expressed $l_0,l_1,l_2$ using $k_1,k_2$. To sum it if then:
+We defined conditions on $k_1,k_2$ based on valuation value and now we have expressed $l_0,l_1,l_2$ using $k_1,k_2$. We also need $l(\gamma)=l(1,2)=0$. To sum it up:
 \begin{gather*}
+\text{in both cases we have condition: } l(\gamma)=l_0+1l_1+2l_2 = 0\\
 \nu(l(\alpha,\beta)) = 1 \iff \begin{pmatrix}
 l_0\\
 l_1\\
@@ -145,6 +146,6 @@ l_2\\
 \frac{1}{4}\\
 \end{pmatrix}, k_2 \in \mathbb{Q}\setminus\{0\}
 \end{gather*}
-and $\nu(l(\alpha,\beta)) \neq 3$ for any values $l_0,l_1,l_2$.
+and $\nu(l(\alpha,\beta)) \neq 3$ for any values $l_0,l_1,l_2$. We also see that $\nu(l(\alpha,\beta)) \neq 2$ for any values $l_0,l_1,l_2$ because $k_2(2+\frac{7}{4}+\frac{1}{4})\neq 0$ for any $k_2$ nonzero.
 \end{document}
 
