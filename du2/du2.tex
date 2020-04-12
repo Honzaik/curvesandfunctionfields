@@ -76,14 +76,75 @@ b_2 \\ 4
 \text{in other words } \begin{pmatrix}
 b_1 \\
 b_2
-\end{pmatrix} \in \mathbb{Q}^2 \setminus Span_{\mathbb{Q}}{\begin{pmatrix}
+\end{pmatrix} \in \mathbb{Q}^2 \setminus Span_{\mathbb{Q}}\begin{pmatrix}
 -7 \\ 4
-\end{pmatrix}}
+\end{pmatrix}
 \end{gather*}
 To sum it up. There exists $\sigma$ satisfying given conditions if and only if $\mathbf{a} = \begin{pmatrix}
 -b_1-2b_2 \\ -1
 \end{pmatrix}$ where $(b_1,b_2)^T$ is not in the span of the vector $(-7, 4)$.
 \end{enumerate}
 
+
+\section{}
+$\nu$ is a normalized DV of $L$, by definition that means there exists $R \subseteq L$ DVR with a maximal ideal $M$ and uniformizing element $t \in M: (t)=M$ and $\nu \coloneqq \nu_t$. We also know that $R = \theta_M$ (notation). We also know that $\nu(\alpha-1)>0,\nu(\beta-2)>0$.
+
+Theorem 5.8 tells us (using $\gamma = (1,2)$) that there exists exactly one $P \in \mathbb{P}_{L/K}$ s.t. $\nu_P(\alpha-1)>0,\nu_P(\beta-2)>0$. By definition $P = (p), p \in P$ and $\nu_P \coloneqq \nu_p$. Theorem 2.15 (2) tells us that $\theta_M = \theta_P \implies \nu = \nu_P$. So from now on we can work with this uniquely defined DV $\nu$.
+
+Using 2) from 5.8 we can assume that $l(\gamma)=0$ since we are only looking for $l_0,l_1,l_2$ when $\nu(l(\alpha,\beta))>0$. Let $(u,v) \coloneqq \bar{\sigma}(\alpha,\beta)$ as in the proof of 5.8 with $(b_1,b_2) = (1,0)$. 
+
+In the proof we see that $l(\alpha,\beta) \in Span(u,v)$ if $l(\gamma)=0$, that means $\exists k_1,k_2 \in \mathbb{Q}: l(\alpha, \beta) = k_1u + k_2v$. Using definition of $\nu_p$ we see that $(p | l(\alpha,\beta) \iff p| k_1u+k_2v) \implies \nu(l(\alpha, \beta))=\nu(k_1u+k_2v)$. 
+
+We also know using proposition 5.5 that $\nu(u)=1$ and $\nu(v)=m>1$ where $m \coloneqq mult(h) = mult(-x^3-\frac{31 x^2}{16})$ from exercise 2 $\implies \nu(v)=2$.
+
+Now using properties of valuation (assuming $k_1,k_2 \neq 0$): $\nu(k_1u)=\nu(k_1)+\nu(u) = 0 + 1 = 1, \nu(k_2v)=\nu(k_2)+\nu(v) = 0 + 2 = 2 \stackrel{2.13}{\implies} \nu(k_1u+k_2v) = min(\nu(k_1u),\nu(k_2v)) = min(1,2) = 1$.
+
+$\nu(k_1u+k_2v) = 1 \iff k_1 \neq 0, k_2 \in \mathbb{Q}$. If $k_2=0$ then we have $\nu(k_1u)=1$ as stated above.
+
+Similarly we can see that $\nu(k_1u+k_2v) = 2 \iff k_1 = 0, k_2 \neq 0$. Also by choosing any combination of $k_1,k_2 \in \mathbb{Q}$ we cannot get $\nu(k_1u+k_2v) = 3$.
+
+Now we have constraints on $k_1,k_2 \in \mathbb{Q}$ and we can "transform" these elements ($k_1u+k_2v$) to a $\alpha, \beta$ representation using $\bar{\sigma}(\alpha)=u, \bar{\sigma}(\beta)=v$. $\bar{\sigma}^{-1} \coloneqq \tau^{-1}_{-\gamma} \theta^{-1}_{A} = \tau_{\gamma}\theta_{A^{-1}}$ with the values from exercise 2. We see that $\bar{\sigma}^{-1}(k_1u+k_2v) = k_1+k_1\alpha+2k_2+\frac{7}{4}k_2\alpha + \frac{1}{4}k_2\beta $. When we rearange these elements we can form $l(\alpha,\beta) = l_0 + l_1\alpha + l_2\beta$ where (using vector notation for simplicty):
+\begin{gather*}
+\begin{pmatrix}
+l_0\\
+l_1\\
+l_2\\
+\end{pmatrix} = k_1\begin{pmatrix}
+1\\
+1\\
+0\\
+\end{pmatrix} + k_2\begin{pmatrix}
+2\\
+\frac{7}{4}\\
+\frac{1}{4}\\
+\end{pmatrix}
+\end{gather*}
+
+We defined conditions on $k_1,k_2$ based on valuation value and now we have expressed $l_0,l_1,l_2$ using $k_1,k_2$. To sum it if then:
+\begin{gather*}
+\nu(l(\alpha,\beta)) = 1 \iff \begin{pmatrix}
+l_0\\
+l_1\\
+l_2\\
+\end{pmatrix} = k_1\begin{pmatrix}
+1\\
+1\\
+0\\
+\end{pmatrix} + k_2\begin{pmatrix}
+2\\
+\frac{7}{4}\\
+\frac{1}{4}\\
+\end{pmatrix}, k_1 \in \mathbb{Q}\setminus\{0\}, k_2 \in \mathbb{Q}\\
+\nu(l(\alpha,\beta)) = 2 \iff \begin{pmatrix}
+l_0\\
+l_1\\
+l_2\\
+\end{pmatrix} = k_2\begin{pmatrix}
+2\\
+\frac{7}{4}\\
+\frac{1}{4}\\
+\end{pmatrix}, k_2 \in \mathbb{Q}\setminus\{0\}
+\end{gather*}
+and $\nu(l(\alpha,\beta)) \neq 3$ for any values $l_0,l_1,l_2$.
 \end{document}
 
