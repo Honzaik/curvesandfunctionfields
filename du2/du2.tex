@@ -91,7 +91,7 @@ $\nu$ is a normalized DV of $L$, by definition that means there exists $R \subse
 
 Theorem 5.8 tells us (using $\gamma = (1,2)$) that there exists exactly one $P \in \mathbb{P}_{L/K}$ s.t. $\nu_P(\alpha-1)>0,\nu_P(\beta-2)>0$. By definition $P = (p), p \in P$ and $\nu_P \coloneqq \nu_p$. Theorem 2.15 (2) tells us that $\theta_M = \theta_P \implies \nu = \nu_P$. So from now on we can work with this uniquely defined DV $\nu$.
 
-Using 2) from 5.8 we can assume that $l(\gamma)=0$ since we are only looking for $l_0,l_1,l_2$ when $\nu(l(\alpha,\beta))>0$. Let $(u,v) \coloneqq \bar{\sigma}(\alpha,\beta)$ as in the proof of 5.8 with $(b_1,b_2) = (1,0)$. 
+Using 2) from 5.8 we can assume that $l(\gamma)=0$ since we are only looking for $l_0,l_1,l_2$ when $\nu(l(\alpha,\beta))>0$. Let $(u,v) \coloneqq \bar{\sigma}(\alpha,\beta)$ as in the proof of 5.8 with $(b_1,b_2) = (1,0)$. We calculate that $(u,v) = (\alpha-1, -7\alpha+4\beta-1)$.
 
 In the proof we see that $l(\alpha,\beta) \in Span(u,v)$ if $l(\gamma)=0$, that means $\exists k_1,k_2 \in \mathbb{Q}: l(\alpha, \beta) = k_1u + k_2v$. Using definition of $\nu_p$ we see that $(p | l(\alpha,\beta) \iff p| k_1u+k_2v) \implies \nu(l(\alpha, \beta))=\nu(k_1u+k_2v)$. 
 
@@ -103,49 +103,53 @@ $\nu(k_1u+k_2v) = 1 \iff k_1 \neq 0, k_2 \in \mathbb{Q}$. If $k_2=0$ then we hav
 
 Similarly we can see that $\nu(k_1u+k_2v) = 2 \iff k_1 = 0, k_2 \neq 0$. Also by choosing any combination of $k_1,k_2 \in \mathbb{Q}$ we cannot get $\nu(k_1u+k_2v) = 3$.
 
-Now we have constraints on $k_1,k_2 \in \mathbb{Q}$ and we can "transform" these elements ($k_1u+k_2v$) to a $\alpha, \beta$ representation using $\bar{\sigma}$. $\bar{\sigma}^{-1} \coloneqq \tau^{-1}_{-\gamma} \theta^{-1}_{A} = \tau_{\gamma}\theta_{A^{-1}}$ with the values from exercise 2. We see that $\bar{\sigma}^{-1}(k_1u+k_2v) = k_1+k_1\alpha+2k_2+\frac{7}{4}k_2\alpha + \frac{1}{4}k_2\beta $. When we rearange these elements we can form $l(\alpha,\beta) = l_0 + l_1\alpha + l_2\beta$ where (using vector notation for simplicty):
+Now we have constraints on $k_1,k_2 \in \mathbb{Q}$ and we can "transform" these elements ($k_1u+k_2v$) to a $\alpha, \beta$ representation using above calculated $(u,v) = (\alpha-1, -7\alpha+4\beta-1)$. We substitute and get $l(\alpha,\beta) = k_1(\alpha-1)+k_2(-7\alpha+4\beta-1)$. When we rearange these elements we can form $l(\alpha,\beta) = l_0 + l_1\alpha + l_2\beta$ where (using vector notation for simplicty)
 \begin{gather*}
 \begin{pmatrix}
 l_0\\
 l_1\\
 l_2\\
 \end{pmatrix} = k_1\begin{pmatrix}
-1\\
+-1\\
 1\\
 0\\
 \end{pmatrix} + k_2\begin{pmatrix}
-2\\
-\frac{7}{4}\\
-\frac{1}{4}\\
+-1\\
+-7\\
+4\\
 \end{pmatrix}
 \end{gather*}
 
-We defined conditions on $k_1,k_2$ based on valuation value and now we have expressed $l_0,l_1,l_2$ using $k_1,k_2$. We also need $l(\gamma)=l(1,2)=0$. To sum it up:
+We defined conditions on $k_1,k_2$ based on valuation value and now we have expressed $l_0,l_1,l_2$ using $k_1,k_2$. We also need $l(\gamma)=l(1,2)=0$ but this is satisfied $\forall k_1,k_2$ since:
+\[
+l(1,2) = l_0+l_1+2l_2 = (-k_1-k_2)+(k_1-7k_2)+2(4k_2) = 0
+\]
+
+To sum it up:
 \begin{gather*}
-\text{in both cases we have condition: } l(\gamma)=l_0+1l_1+2l_2 = 0\\
 \nu(l(\alpha,\beta)) = 1 \iff \begin{pmatrix}
 l_0\\
 l_1\\
 l_2\\
-\end{pmatrix} = k_1\begin{pmatrix}
-1\\
+\end{pmatrix} \in \left\{k_1\begin{pmatrix}
+-1\\
 1\\
 0\\
 \end{pmatrix} + k_2\begin{pmatrix}
-2\\
-\frac{7}{4}\\
-\frac{1}{4}\\
-\end{pmatrix}, k_1 \in \mathbb{Q}\setminus\{0\}, k_2 \in \mathbb{Q}\\
+-1\\
+-7\\
+4\\
+\end{pmatrix}: k_1 \in \mathbb{Q}\setminus\{0\}, k_2 \in \mathbb{Q}\right\}\\
 \nu(l(\alpha,\beta)) = 2 \iff \begin{pmatrix}
 l_0\\
 l_1\\
 l_2\\
-\end{pmatrix} = k_2\begin{pmatrix}
-2\\
-\frac{7}{4}\\
-\frac{1}{4}\\
-\end{pmatrix}, k_2 \in \mathbb{Q}\setminus\{0\}
+\end{pmatrix} \in \left\{k_2\begin{pmatrix}
+-1\\
+-7\\
+4\\
+\end{pmatrix}: k_2 \in \mathbb{Q}\setminus\{0\}\right\}
 \end{gather*}
-and $\nu(l(\alpha,\beta)) \neq 3$ for any values $l_0,l_1,l_2$. We also see that $\nu(l(\alpha,\beta)) \neq 2$ for any values $l_0,l_1,l_2$ because $k_2(2+\frac{7}{4}+\frac{1}{4})\neq 0$ for any $k_2$ nonzero.
+and $\nu(l(\alpha,\beta)) \neq 3$ for any values $l_0,l_1,l_2$.
 \end{document}
 
