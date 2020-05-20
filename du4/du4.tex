@@ -1,0 +1,38 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage{indentfirst} %indentace prvního odstavce
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[czech]{babel}
+\usepackage{mathdots}
+\usepackage{slashbox}
+
+\begin{document}
+\begin{center}
+\large NMAG436 - HW3
+
+\normalsize Jan Oupický
+\end{center}
+\vspace{1\baselineskip}
+
+\section{}
+Let $L \coloneqq \mathbb{F}_p(V_{w_a})$. $w_a$ is a short WEP by definition for every $p$ and $a$. 
+
+First let $p=2$. $w_0 = y^2+x^3, w_1 = y^2 + x^3 + 1$ with partial derivatives $\frac{\partial w_0}{\partial x} (x,y) = x^2, \frac{\partial w_0}{\partial y} (x,y) = 0, \frac{\partial w_1}{\partial x} (x,y) = x^2, \frac{\partial w_1}{\partial y} (x,y) = 0$. We see that $V_{w_0}(\mathbb{F}_2) = \{(0,0), (1,1)\}, V_{w_1}(\mathbb{F}_2) = \{(1,0),(0,1)\}$. We see that $w_0$ is not smooth at $(0,0)$ and $w_1$ at $(0,1)$ therefore they are not smooth. 
+
+Theorem 8.4 tells us that $L$ is an EFF iff $w$ is smooth therefore $L$ is not an EFF. Proposition 8.3 5) tell us that the only other option is that the genus of L is 0.
+
+Now let $p>2$. Let $f \coloneqq x^3+a$. We want to know for which $a$ is $f$ separable. By definition we want to know when $GCD_{\mathbb{F}_p}(f,f')=1$. Since $f' = 3x^2$ for every $a$, we can see that $f,f'$ are not coprime iff $a = 0$. From that we see:
+
+
+If $a=0$ then $w_a$ is not smooth by 3.12. 3) which implies that the genus of L is 0 (same reasoning as in the case $p=2$). If $a\neq 0$ then $w_a$ is smooth and by 8.4 the genus of L is 1. 
+
+\end{document}
+
