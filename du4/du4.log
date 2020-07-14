@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.26)  31 MAY 2020 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.14)  14 JUL 2020 18:22
 entering extended mode
 **C:/Users/honza/curvesandfunctionfields/du4/du4.tex
 (C:/Users/honza/curvesandfunctionfields/du4/du4.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-04-06>
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+L3 programming layer <2020-06-18>
+("B:\Program Files\MiKTeX\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+("B:\Program Files\MiKTeX\tex/latex/base\size12.clo"
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
@@ -21,17 +21,17 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+("B:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+("B:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+("B:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+("B:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count175
@@ -47,19 +47,19 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks16
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+("B:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg"))
+("B:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\utf8x.def"
+("B:\Program Files\MiKTeX\tex/latex/ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\ucs.sty"
+("B:\Program Files\MiKTeX\tex/latex/ucs\ucs.sty"
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-global.def"
+("B:\Program Files\MiKTeX\tex/latex/ucs\uni-global.def"
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
 \uc@secondtry=\count178
@@ -67,13 +67,13 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@combtoksb=\toks20
 \uc@temptokena=\toks21
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\indentfirst.sty"
+("B:\Program Files\MiKTeX\tex/latex/tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/mathtools\mathtools.sty"
+("B:\Program Files\MiKTeX\tex/latex/mathtools\mathtools.sty"
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+("B:\Program Files\MiKTeX\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count179
 \calc@Bcount=\count180
@@ -86,27 +86,27 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count181
 \calc@Cskip=\skip51
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/mathtools\mhsetup.sty"
+("B:\Program Files\MiKTeX\tex/latex/mathtools\mhsetup.sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+("B:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+("B:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+("B:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
 \ex@=\dimen145
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+("B:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen146
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+("B:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count182
@@ -163,7 +163,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \xmathstrut@box=\box47
 \xmathstrut@dim=\dimen161
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+("B:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -171,30 +171,30 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+("B:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+("B:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+("B:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+("B:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+("B:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+("B:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen162
 \Gin@req@width=\dimen163
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty"
+("B:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip56
 \enit@outerparindent=\dimen164
@@ -203,14 +203,14 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count195
 \enitdp@description=\count196
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/subfig\subfig.sty"
+("B:\Program Files\MiKTeX\tex/latex/subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+("B:\Program Files\MiKTeX\tex/latex/caption\caption.sty"
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+("B:\Program Files\MiKTeX\tex/latex/caption\caption3.sty"
+Package: caption3 2020/05/30 v1.12 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen165
 \captionmargin@=\dimen166
@@ -238,7 +238,7 @@ Package caption Info: Standard document class detected.
 \sf@top=\skip60
 \sf@bottom=\skip61
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+("B:\Program Files\MiKTeX\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count272
 \float@exts=\toks28
@@ -246,36 +246,34 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks29
 \@floatcapt=\box50
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2020/03/22 3.42 The Babel package
+("B:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
+Package: babel 2020/07/07 3.46 The Babel package
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2020/03/22 3.42 Babel switching mechanism
+("B:\Program Files\MiKTeX\tex/generic/babel\babel.def"
+File: babel.def 2020/07/07 3.46 Babel common definitions
+\babel@savecnt=\count273
+\U@D=\dimen173
+\l@babelnohyphens=\language79
+
+("B:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
+\bbl@readstream=\read2
 )
+\bbl@dirlevel=\count274
+
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+("B:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-czech\czech.ldf"
+("B:\Program Files\MiKTeX\tex/latex/babel-czech\czech.ldf"
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count273
-\U@D=\dimen173
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@readstream=\read2
-\bbl@dirlevel=\count274
-)
 Package babel Info: Making " an active character on input line 172.
 \cs@wordlen=\count275
 Package babel Info: Making - an active character on input line 226.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/generic/mathdots\mathdots.sty"
+("B:\Program Files\MiKTeX\tex/generic/mathdots\mathdots.sty"
 Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in ma
 th.
 \MDo@unit=\dimen174
@@ -284,7 +282,7 @@ th.
 \MDopostkern=\muskip18
 \MDodotkern=\muskip19
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/slashbox\slashbox.sty"
+("B:\Program Files\MiKTeX\tex/latex/slashbox\slashbox.sty"
 slashbox style by K.Yasuoka, May 1993.
 \@slashboxa=\box52
 \@slashboxb=\box53
@@ -293,8 +291,8 @@ slashbox style by K.Yasuoka, May 1993.
 \@slashboxht=\count277
 \@slashsepl=\dimen175
 \@slashsepr=\dimen176
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+) ("B:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count278
 \l__pdf_internal_box=\box55
 )
@@ -350,10 +348,10 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
+("B:\Program Files\MiKTeX\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+("B:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count279
 \scratchdimen=\dimen177
@@ -366,7 +364,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 \MPnumerator=\count283
 \makeMPintoPDFobject=\count284
 \everyMPtoPDFconversion=\toks31
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+) ("B:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
@@ -376,19 +374,19 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
+("B:\Program Files\MiKTeX\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+("B:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+("B:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \hbox (badness 10000) in paragraph at lines 26--28
@@ -420,28 +418,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
 [1
 
-{C:/Users/honza/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-(du4.aux) ) 
+{C:/Users/honza/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] (du4.aux) )
+ 
 Here is how much of TeX's memory you used:
- 6494 strings out of 480896
- 95752 string characters out of 2908245
- 366894 words of memory out of 3000000
- 22293 multiletter control sequences out of 15000+200000
+ 6645 strings out of 480790
+ 97972 string characters out of 2907055
+ 371887 words of memory out of 3000000
+ 22570 multiletter control sequences out of 15000+200000
  537887 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,10n,48p,690b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on du4.pdf (2 pages, 129908 bytes).
+ 47i,10n,49p,690b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
+<B:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><B:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><B:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><B:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><B:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><B:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><B:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><B:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><B:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy6.pfb><B:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><B:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb>
+Output written on du4.pdf (2 pages, 129917 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
